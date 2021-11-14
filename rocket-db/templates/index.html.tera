@@ -32,7 +32,7 @@
           <div class="row">
             <div class="col">
 
-                {{ m::input(label="Title", type="text", name="account.title") }}
+                {{ m::input(label="Title", type="text", name="submission.title") }}
                 <!-- required -->
 
             </div>
