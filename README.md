@@ -2,7 +2,7 @@
 
 [blockchain](blockchain)
 ------
-Basic blockchain hash code example. You can run with these command.
+Basic blockchain hash code example. You can run with this command.
 
 ```
 cargo run
