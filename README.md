@@ -1,5 +1,16 @@
 # Rust-Examples
 
+[benchmark](benchmark)
+------
+Basic benchmark example. You can run with this command.
+
+```
+cd benchmark
+cargo bench
+```
+
+-------
+
 [blockchain](blockchain)
 ------
 Basic blockchain hash code example. You can run with this command.
