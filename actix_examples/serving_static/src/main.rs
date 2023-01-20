@@ -1,4 +1,4 @@
-use actix_web::{web, App, HttpRequest, HttpServer, Result};
+use actix_web::{web, App, HttpServer, Result};
 use actix_files::{NamedFile, Files};
 
 async fn index() -> Result<NamedFile> {

@@ -11,6 +11,12 @@ cargo bench
 
 -------
 
+[actix examples](actix_examples/)
+------
+The folder containing the list of my experiments with `actix_web`.
+
+------
+
 [blockchain](blockchain)
 ------
 Basic blockchain hash code example. You can run with this command.
@@ -19,7 +25,7 @@ Basic blockchain hash code example. You can run with this command.
 cargo run
 ```
 
--------
+------
 
 [rocket-db](rocket-db)
 ------
