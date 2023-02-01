@@ -17,6 +17,13 @@ The folder containing the list of my experiments with `actix_web`.
 
 ------
 
+[design patterns](design_patterns/)
+------
+The folder containing the list of design patterns in `rust`🦀.
+![builder pattern](design_patterns/images/builder_pattern.png)
+
+------
+
 [blockchain](blockchain)
 ------
 Basic blockchain hash code example. You can run with this command.
