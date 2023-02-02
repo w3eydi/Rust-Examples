@@ -17,6 +17,14 @@ The folder containing the list of my experiments with `actix_web`.
 
 ------
 
+[axum examples](axum_examples/)
+------
+`Axum` is a web application framework that focuses on ergonomics and modularity.
+
+![hello_axum](axum_examples/images/hello_axum.png)
+
+------
+
 [design patterns](design_patterns/)
 ------
 The folder containing the list of design patterns in `rust`🦀.
