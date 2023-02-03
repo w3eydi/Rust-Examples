@@ -11,3 +11,5 @@ By examining the `routing` section, you can see the preview components of a basi
 - `localhost:3000/mirror_body_string` -> Body String example of axum.
 - `localhost:3000/mirror_body_json` -> Json example of axum.
 - `localhost:3000/path_variables/91 or number` -> Path variables example of axum.
+- `localhost:3000/query_params?message=hello&id=23` -> Query params.
+- `localhost:3000/mirror_user_agent` -> User agent example.
