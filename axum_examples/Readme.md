@@ -4,6 +4,9 @@
 
 ![hello_axum](images/hello_axum.png)
 
-## [routing](routing/src/main.rs)
+## [routing](routing/src/)
 
 By examining the `routing` section, you can see the preview components of a basic web page.
+
+- `localhost:3000/mirror_body_string` -> Body String example of axum.
+- `localhost:3000/mirror_body_json` -> Json example of axum.
