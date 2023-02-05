@@ -11,6 +11,12 @@ cargo bench
 
 -------
 
+[artificial intelligence](artificial_intelligence/)
+------
+You can review the experiments on artificial intelligence.
+
+------
+
 [actix examples](actix_examples/)
 ------
 The folder containing the list of my experiments with `actix_web`.
