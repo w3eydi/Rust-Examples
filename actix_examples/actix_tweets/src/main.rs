@@ -1,4 +1,6 @@
 mod handlers;
+mod models;
+mod schema;
 
 use actix_web::{middleware, web, App, HttpServer};
 use diesel::prelude::*;

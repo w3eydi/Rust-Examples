@@ -21,6 +21,8 @@ You can review the experiments on artificial intelligence.
 ------
 The folder containing the list of my experiments with `actix_web`.
 
+![actix_tweets](actix_examples/images/actix_tweets.png)
+
 ------
 
 [axum examples](axum_examples/)
