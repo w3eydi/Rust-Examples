@@ -17,6 +17,14 @@ You can review the experiments on artificial intelligence.
 
 ------
 
+[bevy examples](bevy_examples/)
+------
+`Bevy` is a simple data-driven game engine.
+
+![bevy_examples](bevy_examples/images/sprite.png)
+
+------
+
 [actix examples](actix_examples/)
 ------
 The folder containing the list of my experiments with `actix_web`.
