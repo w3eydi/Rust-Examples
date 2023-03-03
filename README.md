@@ -33,11 +33,11 @@ The folder containing the list of my experiments with `actix_web`.
 
 ------
 
-[axum examples](axum_examples/)
+[tauri examples](tauri_examples/)
 ------
-`Axum` is a web application framework that focuses on ergonomics and modularity.
+`tauri` is a desktop and mobile application framework.
 
-![hello_axum](axum_examples/images/hello_axum.png)
+![hello tauri](tauri_examples/images/pomodoro_app.png)
 
 ------
 
@@ -45,6 +45,14 @@ The folder containing the list of my experiments with `actix_web`.
 ------
 The folder containing the list of design patterns in `rust`🦀.
 ![builder pattern](design_patterns/images/builder_pattern.png)
+
+------
+
+[axum examples](axum_examples/)
+------
+`Axum` is a web application framework that focuses on ergonomics and modularity.
+
+![hello_axum](axum_examples/images/hello_axum.png)
 
 ------
 
