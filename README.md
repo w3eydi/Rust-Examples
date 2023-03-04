@@ -11,12 +11,6 @@ cargo bench
 
 -------
 
-[artificial intelligence](artificial_intelligence/)
-------
-You can review the experiments on artificial intelligence.
-
-------
-
 [bevy examples](bevy_examples/)
 ------
 `Bevy` is a simple data-driven game engine.
@@ -53,6 +47,18 @@ The folder containing the list of design patterns in `rust`🦀.
 `Axum` is a web application framework that focuses on ergonomics and modularity.
 
 ![hello_axum](axum_examples/images/hello_axum.png)
+
+------
+
+[full stack](full_stack/)
+------
+Full stack examples.
+
+------
+
+[artificial intelligence](artificial_intelligence/)
+------
+You can review the experiments on artificial intelligence.
 
 ------
 
