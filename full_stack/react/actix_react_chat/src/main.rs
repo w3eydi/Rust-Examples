@@ -2,9 +2,11 @@ use std::env;
 use actix::*;
 use actix_cors::Cors;
 use actix_files::Files;
-use actix_web::{web, http, App, HttpServer, middleware};
+use actix_web::{web::{self, get}, http, App, HttpServer, middleware};
 
 use diesel::{prelude::*, r2d2::{self, ConnectionManager}};
+
+mod routes;
 
 pub type DbPool = r2d2::Pool<ConnectionManager<PgConnection>>;
 
@@ -21,8 +23,18 @@ async fn main() -> std::io::Result<()>{
 
     let app = HttpServer::new(move || {
         App::new()
+            .wrap(
+                Cors::default()
+                    .allowed_origin("http://localhost:8080")
+                    .allowed_origin("http://localhost:3000")
+                    .allowed_methods(vec!["GET", "POST"])
+                    .allowed_headers(vec![http::header::AUTHORIZATION, http::header::ACCEPT])
+                    .allowed_header(http::header::CONTENT_TYPE)
+                    //.supports_credentials()
+                    .max_age(3600)
+            )
             .wrap(middleware::Logger::default())
-            .route("/", web::get().to(|| async { "Actix Web!"}))
+            .service(web::resource("/").to(routes::index))
             
     })
         .workers(2)
