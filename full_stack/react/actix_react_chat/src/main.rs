@@ -35,7 +35,7 @@ async fn main() -> std::io::Result<()>{
             )
             .wrap(middleware::Logger::default())
             .service(web::resource("/").to(routes::index))
-            
+            .service(Files::new("/", "./static"))
     })
         .workers(2)
         .bind((server_address, server_port))?
