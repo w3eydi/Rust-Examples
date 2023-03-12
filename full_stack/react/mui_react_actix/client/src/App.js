@@ -1,10 +1,13 @@
-import Navi from './navi/Navi';
+import Navi from './components/navi/Navi';
+import { Container } from '@mui/material';
+import Dashboard from './components/root/Dashboard';
 
 function App() {
   return (
-    <div>
-        <Navi />
-    </div>
+    <Container maxWidth="xl">
+      <Navi />
+      <Dashboard/>
+    </Container>
   );
 }
 
