@@ -57,3 +57,14 @@ pub fn update_todo_by_uuid(
 
     Ok(update_todo)
 }
+
+pub fn delete_todo_by_uuid(
+    _uuid: uuid::Uuid,
+    conn: &mut PgConnection
+) -> Result<usize, DbError> {
+    use crate::schema::todos::dsl::*;
+    let delete_todo = diesel::delete(todos
+            .find(_uuid.to_string()))
+            .execute(conn)?;
+    Ok(delete_todo)
+}

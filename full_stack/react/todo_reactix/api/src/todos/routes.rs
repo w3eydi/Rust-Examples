@@ -1,4 +1,5 @@
-use actix_web::{web, get, post, HttpResponse, Error, put};
+use actix_web::{web, get, post, delete, put, HttpResponse, Error};
+use serde_json::json;
 use crate::DbPool;
 use uuid::Uuid;
 use super::{models::{Title, BoolLogic}, db};
@@ -75,9 +76,26 @@ async fn update_by_uuid(
     Ok(HttpResponse::Ok().json(update_todo))
 }
 
+#[delete("/todos/{todo_uuid}")]
+async fn delete_by_uuid(
+    id: web::Path<Uuid>,
+    pool: web::Data<DbPool>
+) -> Result<HttpResponse, Error> {
+    let deleted_uuid = id.into_inner();
+    let delete_todo = web::block(move || {
+        let mut conn = pool.get()?;
+        db::delete_todo_by_uuid(deleted_uuid, &mut conn)
+    })
+        .await?
+        .map_err(actix_web::error::ErrorInternalServerError)?;
+
+    Ok(HttpResponse::Ok().json(json!({ "deleted": delete_todo})))
+}
+
 pub fn init_routes(config: &mut web::ServiceConfig) {
     config.service(create_a_todo);
     config.service(get_all);
     config.service(get_by_uuid);
     config.service(update_by_uuid);
+    config.service(delete_by_uuid);
 }
