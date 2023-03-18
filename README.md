@@ -1,5 +1,13 @@
 # Rust-Examples
 
+[full stack](full_stack/)
+------
+Full stack examples.
+
+![todo_reactix](full_stack/images/todo_reactix.png)
+
+------
+
 [actix examples](actix_examples/)
 ------
 The folder containing the list of my experiments with `actix_web`.
@@ -45,12 +53,6 @@ The folder containing the list of design patterns in `rust`🦀.
 [wasm examples](WASM)
 ------
 Wasm examples.
-
-------
-
-[full stack](full_stack/)
-------
-Full stack examples.
 
 ------
 

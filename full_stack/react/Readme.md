@@ -4,4 +4,4 @@
 - [shopping application](mui_react_actix/)
 - [todo reactix](todo_reactix/)
 
-![todo_reactix](../images/todo_reactix.png)
+![todo_reactix](./../images/todo_reactix.png)
