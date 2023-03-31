@@ -1,0 +1,11 @@
+[package]
+name = "thread_local"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+
+[[example]]
+name = "thread_local2"
+path = "examples/thread_local2.rs"
