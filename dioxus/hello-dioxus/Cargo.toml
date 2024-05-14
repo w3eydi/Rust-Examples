@@ -1,0 +1,15 @@
+[package]
+name = "hello-dioxus"
+version = "0.1.0"
+authors = ["w3eydi <w3.eydi@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+dioxus = { version = "0.5", features = ["web"] }
+
+# Debug
+tracing = "0.1.40"
+dioxus-logger = "0.5.0"
