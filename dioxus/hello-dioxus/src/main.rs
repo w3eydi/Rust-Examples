@@ -21,6 +21,7 @@ fn App() -> Element {
 fn book_list() -> Element {
     rsx!{
         section {
+            class: "booklist",
             book_definition {}
             book_definition {}
             book_definition {}
@@ -34,6 +35,7 @@ fn book_list() -> Element {
 fn book_definition() -> Element {
     rsx!{
         article {
+            class: "book",
             book_title {}
             book_author {}
             book_placeholder {}
@@ -44,20 +46,23 @@ fn book_definition() -> Element {
 #[component]
 fn book_title() -> Element {
     rsx!{
-        h2 {"book title"}
+        h2 {"Atomic Habits"}
     }
 }
 
 #[component]
 fn book_author() -> Element {
     rsx!{
-        h4 { "book author" }
+        h4 { "James Clear" }
     }
 }
 
 #[component]
 fn book_placeholder() -> Element {
     rsx! {
-        h4 { "image placeholder" }
+        img {
+            src: "https://m.media-amazon.com/images/I/81YkqyaFVEL._SY466_.jpg",
+            alt: "Interesting Facts For Curious Minds"
+        }
     }
 }

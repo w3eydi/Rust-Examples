@@ -1,40 +1,42 @@
-body {
-    background-color: #95a5e4;
-}
-
-#main {
+* {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#links {
-    width: 400px;
-    text-align: left;
-    font-size: x-large;
-    color: white;
-    display: flex;
-    flex-direction: column;
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #f1f5f8;
+    color: #222;
 }
 
-#links a {
-    color: white;
-    text-decoration: none;
-    margin-top: 20px;
-    margin: 10px;
-    border: white 1px solid;
-    border-radius: 5px;
-    padding: 10px;
+.booklist {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 5rem auto;
+    display: grid;
+    gap: 2rem;
 }
 
-#links a:hover {
-    background-color: #1f1f1f;
-    cursor: pointer;
+@media screen and (min-width: 768px) {
+    .booklist {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-#header {
-    max-width: 1200px;
+.book {
+    border-radius: 1rem;
+    background: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.book img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.book h2 {
+    margin-top: 1rem;
+    font-size: 1rem;
 }
