@@ -5,6 +5,7 @@ use tracing::Level;
 
 mod app;
 mod components;
+mod data_structure;
 
 fn main() {
     // Init logger
