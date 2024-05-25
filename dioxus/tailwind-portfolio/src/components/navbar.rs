@@ -1,11 +1,13 @@
+
 use dioxus::prelude::*;
 
-use crate::data_structure::links_generator;
+use crate::data_structure::LinksWrapper;
 
 #[component]
 pub fn main_nav() -> Element {
-    let links = links_generator(4);
-
+    let LINK_JSON_DATA: &str = include_str!("../../src/data.json");
+    let links_wrapper: LinksWrapper = serde_json::from_str(LINK_JSON_DATA).unwrap();
+    
     rsx!{
         nav {
             class: "bg-emerald-100",
@@ -18,7 +20,7 @@ pub fn main_nav() -> Element {
                 }
                 div {
                     class: "flex gap-x-3",
-                    for link in links{
+                    for link in links_wrapper.links {
                         a {
                             class: "capitalize text-lg tracking-wide hover:text-emerald-600 duration-300",
                             key: "{link.id}",

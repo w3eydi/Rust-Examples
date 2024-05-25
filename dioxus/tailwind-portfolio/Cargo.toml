@@ -13,3 +13,5 @@ dioxus = { version = "0.5", features = ["web"] }
 # Debug
 tracing = "0.1.40"
 dioxus-logger = "0.5.0"
+serde = { version = "1.0.202", features = ["derive"] }
+serde_json = "1.0.117"

@@ -1,0 +1,8 @@
+{
+    "links": [
+        { "id": 1, "href": "#home", "text": "home" },
+        { "id": 2, "href": "#about", "text": "about" },
+        { "id": 3, "href": "#skills", "text": "skills" },
+        { "id": 4, "href": "#projects", "text": "projects" }
+    ]
+}
