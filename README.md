@@ -1,4 +1,11 @@
 # Rust-Examples
+[dioxus examples](dioxus/)
+------
+dioxus framework examples.
+
+![dioxus_examples](dioxus/images/tailwind_portfolio.png)
+
+------
 
 [full stack](full_stack/)
 ------

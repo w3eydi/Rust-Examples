@@ -12,7 +12,7 @@ pub fn main_nav() -> Element {
         nav {
             class: "bg-emerald-100",
             div {
-                class: "mx-auto max-w-7xl px-8 py-4 flex flex-col sm:flex-row
+                class: "mx-auto max-w-7xla px-8 py-4 flex flex-col sm:flex-row
                 sm:gap-x-16 sm:items-center sm:py-8",
                 h2 {
                     class: "text-3xl font-bold",

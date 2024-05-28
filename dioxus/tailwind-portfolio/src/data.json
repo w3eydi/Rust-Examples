@@ -4,5 +4,26 @@
         { "id": 2, "href": "#about", "text": "about" },
         { "id": 3, "href": "#skills", "text": "skills" },
         { "id": 4, "href": "#projects", "text": "projects" }
+    ],
+
+    "skills": [
+        {
+          "id": 1,
+          "title": "HTML&CSS",
+          "icon": "Box::new(FaReact)",
+          "text": "Highly skilled in HTML & CSS, adeptly crafting visually appealing and responsive websites for optimal user experiences."
+        },
+        {
+          "id": 2,
+          "title": "Javascript",
+          "icon": "FaJs",
+          "text": "Expertise in JavaScript, building interactive and dynamic web applications with a focus on seamless user interactions and functionality"
+        },
+        {
+          "id": 3,
+          "title": "React",
+          "icon": "FaHtml5",
+          "text": "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture."
+        }
     ]
 }
